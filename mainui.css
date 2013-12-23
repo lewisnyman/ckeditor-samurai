@@ -50,12 +50,9 @@ Special outer level classes used in this file:
 {
 	/* This is <span>, so transform it into a block.*/
 	display: block;
-	border: 1px solid #b6b6b6;
+	border: 1px solid #b8b8b8;
+	border-radius: 2px 2px 0 0;
 	padding: 0;
-
-	-moz-box-shadow: 0 0 3px rgba(0,0,0,.15);
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.15);
-	box-shadow: 0 0 3px rgba(0,0,0,.15);
 }
 
 /* The inner boundary of the interface. */
@@ -99,52 +96,25 @@ Special outer level classes used in this file:
 
 .cke_top
 {
-	/*border: 1px solid #b2b2b2;*/
-	border-bottom: 1px solid #b6b6b6;
+	border-bottom: 1px solid #b8b8b8;
 	padding: 6px 8px 2px;
 
 	/* Allow breaking toolbars when in a narrow editor. (#9947) */
 	white-space: normal;
-
-	-moz-box-shadow: 0 1px 0 #fff inset;
-	-webkit-box-shadow: 0 1px 0 #fff inset;
-	box-shadow: 0 1px 0 #fff inset;
-
-	background: #cfd1cf;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#cfd1cf));
-	background-image: -moz-linear-gradient(top, #f5f5f5, #cfd1cf);
-	background-image: -webkit-linear-gradient(top, #f5f5f5, #cfd1cf);
-	background-image: -o-linear-gradient(top, #f5f5f5, #cfd1cf);
-	background-image: -ms-linear-gradient(top, #f5f5f5, #cfd1cf);
-	background-image: linear-gradient(top, #f5f5f5, #cfd1cf);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#f5f5f5', endColorstr='#cfd1cf');
+	background: #ebeae4;
 }
 
 .cke_float .cke_top
 {
-	border: 1px solid #b6b6b6;
-	border-bottom-color: #999;
+	border: 1px solid #b8b8b8;
 }
 
 .cke_bottom
 {
 	padding: 6px 8px 2px;
 	position: relative;
-
-	border-top: 1px solid #bfbfbf;
-
-	-moz-box-shadow: 0 1px 0 #fff inset;
-	-webkit-box-shadow: 0 1px 0 #fff inset;
-	box-shadow: 0 1px 0 #fff inset;
-
-	background: #cfd1cf;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#cfd1cf));
-	background-image: -moz-linear-gradient(top, #ebebeb, #cfd1cf);
-	background-image: -webkit-linear-gradient(top, #ebebeb, #cfd1cf);
-	background-image: -o-linear-gradient(top, #ebebeb, #cfd1cf);
-	background-image: -ms-linear-gradient(top, #ebebeb, #cfd1cf);
-	background-image: linear-gradient(top, #ebebeb, #cfd1cf);
-	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#ebebeb', endColorstr='#cfd1cf');
+	border-top: 1px solid #b8b8b8;
+	background: #ebeae4;
 }
 
 /* On iOS we need to manually enable scrolling in the contents block. (#9945) */
@@ -167,7 +137,7 @@ Special outer level classes used in this file:
 	height: 0;
 	overflow: hidden;
 	border-width: 10px 10px 0 0;
-	border-color: transparent #666 transparent transparent;
+	border-color: transparent #595959 transparent transparent;
 	border-style: dashed solid dashed dashed;
 
 	font-size: 0;

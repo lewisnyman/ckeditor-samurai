@@ -85,7 +85,7 @@ CKEDITOR.skin.chameleon = ( function() {
 	// Colours are accepted in 7-byte hex format, for example: #00ff00.
 	// Brightness ratio must be a float number within [-1, 1],
 	// where -1 is black, 1 is white and 0 is the original colour.
-	var colorBrightness = ( function() {
+var colorBrightness = ( function() {
 		function channelBrightness( channel, ratio ) {
 			return ( '0' + ( ratio < 0 ?
 					0 | channel * ( 1 + ratio )
